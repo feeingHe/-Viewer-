@@ -95,7 +95,8 @@ options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
 
 
 ### 3、Viewer调用示例
-```var viewer = $('.test').picViewer({
+```
+var viewer = $('.test').picViewer({
     height:340,
     width:500,
     viewable:true,//是否开启图片查看器
@@ -141,4 +142,5 @@ options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
         mode:'vertical',
         loop:false
   },
-});```
+});
+```
