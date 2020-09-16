@@ -1,9 +1,9 @@
 # VIEWER
-图片附件查看器插件
+#### 图片附件查看器插件，可预览图片，视频功能强大！
 # Viewer组件
 
 #### 说明：
-#### 该组件采用UMD规范，基于swiper2开发，兼容CMD/AMD规范，当然也适用于CUI4/CUI5。
+#### 该组件采用UMD规范，基于swiper2开发，兼容CMD/AMD规范，当然也适用于。
 #### 浏览器向下兼容到IE9；
 ## 依赖文件：viewer.all.min.js/viewer.css (某些规范下需要提前引入jquery)
 ## 调用的方式：$（selector）.picViewer（options） 返回Viewer对象。
