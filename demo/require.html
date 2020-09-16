@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="./css/viewer.css">
+    <style>
+        .test {
+            background-color: #f2f3f5;
+        }
+    </style>
+</head>
+<body>
+<h1 id="title">我是require测试页面！ </h1>
+<div class="test"></div>
+<!-- Scripts -->
+<script src="js/require.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script>
+    require(['./js/picture-viewer.all.min'], function () {
+        test();
+    });
+
+    function test() {
+        //图片轮询 图片查看器
+        var pic1 = $('.test').picViewer({
+            height: 260,
+            width: 300,
+            viewable: true,//是否开启图片查看器
+            uploadBtnText: "上传",
+            deleteBtnText: "删除该附件",
+            paginationModel:"image",
+            hasUploadAndDeleteBtns: true,//是否有上传和删除按钮 【其他配置项参考C5 carousel轮播组件】
+            data: [
+                {
+                    img: './images/tibet-1.jpg',
+                    text: "我是video",
+                    isVideo: true,//标识video
+                    videoSrc: './video/sy.mp4',
+                    args: {
+                        href: 'www.baidu.com'
+                    }
+                },  {
+                    img: './images/tibet-2.jpg',
+                    text: '我是img2'
+                }, {
+                    img: './images/tibet-3.jpg',
+                }, {
+                    img: './images/tibet-4.jpg',
+                    text: '我是img3'
+                }, {
+                    img: './images/tibet-5.jpg',
+                    text: '我是img4'
+                }, {
+                    img: './images/tibet-6.jpg',
+                    text: '我是img5'
+                }
+            ],
+            afterView: function (d) {
+                console.log(d)
+            },
+            onUpload: function (params) {
+                pic1.addItem(params.activeIndex, [{
+                    img: './images/tibet-2.jpg',
+                    videoSrc: './video/sy.mp4',
+                    text: '我是img123123',
+                    isVideo: true
+                }]);
+                console.log(params)
+            },
+            onDelete: function (params) {
+                pic1.removeItemByIndex(params.activeIndex);
+                console.log(params);
+                pic1.getSwiper(function (swiper) {
+                    console.log('swiper:', swiper)
+                });
+
+            },
+            swiper: {
+                loop: false,
+                paginationClickable: true,
+                // mode:'vertical',
+                slidesPerView: 1,
+                simulateTouch: true
+            },
+        });
+    }
+</script>
+</body>
+</html>
