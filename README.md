@@ -1,7 +1,7 @@
 # VIEWER 图片、视频附件查看器插件
 # Viewer组件
 
-#### 说明：
+说明：
 #### 该组件采用UMD规范，基于swiper2开发，兼容CMD/AMD 等规范。
 #### 浏览器向下兼容到IE9，可预览图片、视频；
 ## 依赖文件：viewer.all.min.js/viewer.css (某些规范下需要提前引入jquery)
@@ -9,8 +9,7 @@
 ### 1、options配置项说明
 options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
 ---|:--|:--|:--|:--
-data | Object| 是 | [] | 组件的数据源，如：<br>
-<pre>[{
+data | Object| 是 | [] | 组件的数据源，如：<pre>[{
   img:”../img/1.png”,
   text:”我是文字1”
 },
