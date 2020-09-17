@@ -10,7 +10,7 @@
 options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
 ---|:--|:--|:--|:--
 data | Object| 是 | [] | 组件的数据源，如：
-```
+`
 [{
   img:”../img/1.png”,
   text:”我是文字1”
@@ -21,24 +21,24 @@ data | Object| 是 | [] | 组件的数据源，如：
   isVideo:true,
   videoSrc:”./video/sy.mp4”
 }]
-```
-+ height	Number	否	300	组件的高度值~
-+ width	Number	否	300	组件的宽度值
-+ viewable	Boolean	否	true	组件是否可点击打开大图预览
-+ uploadBtnText	String	否	“上传”	上传按钮文字的内容【第一个按钮显示的文案】
-+ deleteBtnText	String	否	“删除该附件”	删除按钮文字的内容【第二个按钮显示的文案】
-+ uploadBtnTitle	String	否	“上传”	上传按钮提示文字的内容【第一个按钮显示的提示文案】
-+ deleteBtnTitle	String	否	“删除该附件”	删除按钮提示文字的内容【第二个按钮显示的提示文案】
-+ hasUploadAndDeleteBtns	Boolean	否	true	是否有 上传和 删除 按钮
-+ paginationModel	String	否	“point”	分页器的模式，可选值有：
-+ “point” ：分页器为 圆点模式
-+ “image” ：分页器为 缩略图模式
-+ afterView	Function	否	null	点击打开大图预览之后的回调方法，
-+ 必须配合viewable为true时使用
-+ onUpload	Function	否	null	点击上传按钮之后的回调 
-+ onDelete	Function	否	null	点击删除按钮之后的回调
-+ swiper	Object	否	默认值：
-```
+`
+ height | Number | 否 | 300 | 组件的高度值~
+ width | Number | 否 | 300 | 组件的宽度值
+ viewable | Boolean | 否 | true | 组件是否可点击打开大图预览
+ uploadBtnText | String | 否 | “上传” | 上传按钮文字的内容【第一个按钮显示的文案】
+ deleteBtnText | String | 否 | “删除该附件” | 删除按钮文字的内容【第二个按钮显示的文案】
+ uploadBtnTitle | String | 否 | “上传” | 上传按钮提示文字的内容【第一个按钮显示的提示文案】
+ deleteBtnTitle | String | 否 | “删除该附件” | 删除按钮提示文字的内容【第二个按钮显示的提示文案】
+ hasUploadAndDeleteBtns | Boolean | 否 | true | 是否有 **上传**和 **删除** 按钮
+ paginationModel | String | 否 | “point”	分页器的模式，可选值有：
+ “point” ：分页器为 圆点模式
+ “image” ：分页器为 缩略图模式
+ afterView | Function | 否 | null | 点击打开大图预览之后的回调方法，
+ 必须配合viewable为true时使用
+ onUpload | Function | 否 | null | 点击上传按钮之后的回调 
+ onDelete | Function | 否 | null | 点击删除按钮之后的回调
+ swiper | Object | 否 | 默认值：
+`
 {
     loop: false, // 循环模式选项
     // 如果需要分页器
@@ -52,9 +52,9 @@ data | Object| 是 | [] | 组件的数据源，如：
     onSlideClick: function () {
     }
 }
-```
-+ 注：该配置项与swiper2的所有配置均一致，
-+ 配置项比较多，具体请查看swiper2的API文档，请自行百度搜索
+`
+ 注：该配置项与swiper2的所有配置均一致，
+配置项比较多，具体请查看swiper2的API文档，请自行百度搜索
 				
 
 
@@ -145,4 +145,4 @@ var viewer = $('.test').picViewer({
   },
 });
 ```
-> oh ~ ,给颗星再走吧~
+>> ow ho ~ ,给颗星再走吧~
