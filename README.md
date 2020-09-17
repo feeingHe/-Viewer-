@@ -4,7 +4,7 @@
 说明：
 #### 该组件采用UMD规范，基于swiper2开发，兼容CMD/AMD 等规范。
 #### 浏览器向下兼容到IE9，可预览图片、视频；
-##### 依赖文件：viewer.all.min.js/viewer.css (某些规范下需要提前引入jquery)
+##### 依赖文件：picture-viewer.all.min.js/viewer.css (某些规范下需要提前引入jquery)
 ##### 调用的方式：$(selector).picViewer(options) 返回Viewer对象。
 ### 1、options配置项说明
 options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
