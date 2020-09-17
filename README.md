@@ -32,10 +32,10 @@ options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
 
 方法 | 参数说明
 ---|:--
- addItem | 新增某一项 <br> **Viewer.addItem(index,data)** <br>index：在索引值为index的图片后，新增某一项或者多项，索引的起始值为0。 <br> data：需要新增的数据，支持Object/Array <br>示例：<pre> Viewer.addItem(activeIndex, [{<br> img: './images/tibet-2.jpg',<br> videoSrc:'./video/sy.mp4',<br/> text: '我是img123123',<br> isVideo:true <br>}]);</pre> 
+ addItem | 新增某一项 <br> **Viewer.addItem(***index,data***)** <br>index：在索引值为index的图片后，新增某一项或者多项，索引的起始值为0。 <br> data：需要新增的数据，支持Object/Array <br>示例：<pre> Viewer.addItem(activeIndex, [{<br> img: './images/tibet-2.jpg',<br> videoSrc:'./video/sy.mp4',<br/> text: '我是img123123',<br> isVideo:true <br>}]);</pre> 
  removeItemByIndex | 删除某一项 <br> **Viewer.removeItemByIndex (***index***)** <br> index：删除索引值为 index的附件，索引的起始值为0。<br>示例：<br> ` Viewer. removeItemByIndex(3);`
  refresh | 刷新viewer组件 <br/> **Viewer.refresh (***data***)** <br/>data：此项说明参考options配置项的data说明。<br><pre> Viewer.addItem({<br/> height:500 <br/> }）;</pre> 
- getSwiper | 获取swiper对象 **Viewer.getSwiper(***callbackFn***)** <br/>callbackFn：回调的方法，swiper对象以参数返回。<br/>示例：<br/> <pre> Viewer. getSwiper(function( swiper ){<br/>  //swiper对象以参数的形式返回<br/> //swiper对象具体用法同swiper2组件返回的对象<br> //具体参考swiper2的官方文档，此处不再赘述<br> }）;</pre> 
+ getSwiper | 获取swiper对象 **Viewer.getSwiper(***callbackFn***)** <br/>callbackFn：回调的方法，swiper对象以参数返回。<br/>示例：<br/> <pre> Viewer.getSwiper(function( swiper ){<br/>   //swiper对象以参数的形式返回<br/>  //swiper对象具体用法同swiper2组件返回的对象<br>  //具体参考swiper2的官方文档，此处不再赘述<br> }）;</pre> 
 
 
 ### 3、Viewer调用示例
