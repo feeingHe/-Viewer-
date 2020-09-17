@@ -9,9 +9,8 @@
 ### 1、options配置项说明
 options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
 ---|:--|:--|:--|:--
-data | Object| 是 | [] | 组件的数据源，如：
-`
-[{
+data | Object| 是 | [] | 组件的数据源，如：<br>
+<pre>[{
   img:”../img/1.png”,
   text:”我是文字1”
 },
@@ -20,8 +19,7 @@ data | Object| 是 | [] | 组件的数据源，如：
   text:”我是文字2”,
   isVideo:true,
   videoSrc:”./video/sy.mp4”
-}]
-`
+}]</pre>
  height | Number | 否 | 300 | 组件的高度值~
  width | Number | 否 | 300 | 组件的宽度值
  viewable | Boolean | 否 | true | 组件是否可点击打开大图预览
