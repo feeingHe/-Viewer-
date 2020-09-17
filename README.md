@@ -48,7 +48,7 @@ var viewer = $('.test').picViewer({
     deleteBtnText:"删除该附件223",
     uploadBtnTitle:"上传aaa",
     deleteBtnTitle:"删除该附件aa",
-    hasUploadAndDeleteBtns:true,//是否有上传和删除按钮 【其他配置项参考C5 carousel轮播组件】
+    hasUploadAndDeleteBtns:true,//是否有上传和删除按钮 
     paginationModel:"image", //point image
     data:[
         { img: './images/tibet-1.jpg',
@@ -88,4 +88,4 @@ var viewer = $('.test').picViewer({
   },
 });
 ```
-***ow ho ~ ,给颗星再走吧~***
+***ow ho ~ ,markdown的 table排版是个辛苦活呢，用star表示你的认可吧~***
