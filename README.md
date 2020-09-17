@@ -144,3 +144,4 @@ var viewer = $('.test').picViewer({
   },
 });
 ```
+oh ~ ,给颗星再走吧~
