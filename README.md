@@ -9,7 +9,7 @@
 ### 1、options配置项说明
 options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
 ---|:--|:--|:--|:--
- data | Object| 是 | [] | 组件的数据源，如：<pre style="white-space:pre-wrap;">[ {img: ”../img/1.png”, text:”我是文字1” },  {img:”../img/2.png”, text:”我是文字2”, isVideo:true, videoSrc:”./video/sy.mp4” }]</pre>
+ data | Object| 是 | [] | 组件的数据源，如：<pre style="white-space:pre-wrap;">[ <br>{img: ”../img/1.png”, text:”我是文字1” },  <br>{<br>img:”../img/2.png”, text:”我是文字2”, isVideo:true, <br>videoSrc:”./video/sy.mp4” }<br>]</pre>
  height | Number | 否 | 300 | 组件的高度值~
  width | Number | 否 | 300 | 组件的宽度值
  viewable | Boolean | 否 | true | 组件是否可点击打开大图预览
@@ -22,8 +22,7 @@ options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
  afterView | Function | 否 | null | 点击打开大图预览之后的回调方法，<br/>必须配合viewable为true时使用
  onUpload | Function | 否 | null | 点击上传按钮之后的回调 
  onDelete | Function | 否 | null | 点击删除按钮之后的回调
- swiper | Object | 否 | 默认值：<pre style="white-space:pre-wrap;">{ loop: false, // 循环模式选项  // 如果需要分页器 pagination: '.swiper-pagination', paginationClickable:true, // 如果需要前进后退按钮 navigation: {
-        nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }, onSlideClick: function () {}} </pre><br/>注：该配置项与swiper2的所有配置均一致，配置项比较多，具体请查看swiper2的API文档，请自行百度搜索
+ swiper | Object | 否 | 默认值：<pre style="white-space:pre-wrap;">{ <br>loop: false, <br>// 循环模式选项  <br>// 如果需要分页器 <br>pagination: '.swiper-pagination', <br>paginationClickable:true, <br>// 如果需要前进后退按钮 <br>navigation: <br>{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }, <br>onSlideClick: function () {}} </pre><br/>注：该配置项与swiper2的所有配置均一致，配置项比较多，<br>具体请查看swiper2的API文档，请自行百度搜索
 				
 
 
