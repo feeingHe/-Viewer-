@@ -9,7 +9,7 @@
 ### 1、options配置项说明
 options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
 ---|:--|:--|:--|:--
- data | Object| 是 | [] | 组件的数据源，如：<pre style="white-space:pre-wrap;">[ <br>{img: ”../img/1.png”, text:”我是文字1” },  <br>{<br>img:”../img/2.png”, text:”我是文字2”, isVideo:true, <br>videoSrc:”./video/sy.mp4” }<br>]</pre>
+ data | Object| 是 | [] | 组件的数据源，如：`[ <br>{img: ”../img/1.png”, text:”我是文字1” },  <br>{ <br>img:”../img/2.png”, text:”我是文字2”, isVideo:true, <br>videoSrc:”./video/sy.mp4” }<br>]`
  height | Number | 否 | 300 | 组件的高度值~
  width | Number | 否 | 300 | 组件的宽度值
  viewable | Boolean | 否 | true | 组件是否可点击打开大图预览
@@ -22,7 +22,7 @@ options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
  afterView | Function | 否 | null | 点击打开大图预览之后的回调方法，<br/>必须配合viewable为true时使用
  onUpload | Function | 否 | null | 点击上传按钮之后的回调 
  onDelete | Function | 否 | null | 点击删除按钮之后的回调
- swiper | Object | 否 | 默认值：<pre style="white-space:pre-wrap;">{ <br>loop: false, <br>// 循环模式选项  <br>// 如果需要分页器 <br>pagination: '.swiper-pagination', <br>paginationClickable:true, <br>// 如果需要前进后退按钮 <br>navigation: <br>{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }, <br>onSlideClick: function () {}} </pre><br/>注：该配置项与swiper2的所有配置均一致，配置项比较多，<br>具体请查看swiper2的API文档，请自行百度搜索
+ swiper | Object | 否 | 默认值：<pre style="white-space:pre-wrap;">{ <br>loop: false, <br>// 循环模式选项  <br>// 如果需要分页器 <br>pagination: '.swiper-pagination', <br>paginationClickable:true, <br>// 如果需要前进后退按钮 <br>navigation: { <br>nextEl: '.swiper-button-next', <br>prevEl: '.swiper-button-prev' <br>}, <br>onSlideClick: function () {}<br>} </pre><br/>注：该配置项与swiper2的所有配置均一致，配置项比较多，<br>具体请查看swiper2的API文档，请自行百度搜索
 				
 
 
@@ -30,37 +30,12 @@ options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
 
 ### 2、Viewer对象方法说明
 
-方法	参数说明
-+ addItem	新增某一项
-+ Viewer .addItem(index,data)
-+ index：在索引值为index的图片后，新增某一项或者多项，索引的起始值为0。
-+ 示例：
-+ Viewer.addItem(activeIndex, [{
-     img: './images/tibet-2.jpg',
-     videoSrc:'./video/sy.mp4',
-     text: '我是img123123',
-     isVideo:true
-+ }]);
-+ removeItemByIndex	
-+ 删除某一项
-+ Viewer . removeItemByIndex (index)
-+ index：删除索引值为 index的附件，索引的起始值为0。
-+ 示例：
-+ Viewer. removeItemByIndex (activeIndex);
-+ refresh	
-+ 刷新viewer组件
-+ Viewer . refresh (data)
-+ data：此项说明参考options配置项的data说明。
-+ Viewer.addItem({
-   height:500
-+ }）;
-+ getSwiper	
-+ 获取swiper对象
-+ Viewer . getSwiper (function( swiper ){
-+ //swiper对象以参数的形式返回
-+ //swiper对象具体用法同swiper2组件返回的对象
-+ //具体参考swiper2的官方文档，此处不再赘述
-+  }）;
+方法 | 参数说明
+---|:--
+ addItem | 新增某一项 <br> **Viewer.addItem(index,data)** <br>index：在索引值为index的图片后，新增某一项或者多项，索引的起始值为0。<br>示例：<pre> Viewer.addItem(activeIndex, [{<br>img: './images/tibet-2.jpg',<br>videoSrc:'./video/sy.mp4',<br>text: '我是img123123',<br> isVideo:true <br>}]);</pre> 
+ removeItemByIndex | 删除某一项 <br> **Viewer.removeItemByIndex (***index***)** <br> index：删除索引值为 index的附件，索引的起始值为0。<br>示例：<br>Viewer. removeItemByIndex(3);
+ refresh | 刷新viewer组件 <br> **Viewer. refresh (data)** <br>data：此项说明参考options配置项的data说明。<br>Viewer.addItem({<br>height:500 <br>}）;
+ getSwiper | 获取swiper对象 **Viewer. getSwiper(callbackFn)** <br>示例：<br> ：<pre> Viewer. getSwiper(function( swiper ){<br> //swiper对象以参数的形式返回<br>//swiper对象具体用法同swiper2组件返回的对象<br>//具体参考swiper2的官方文档，此处不再赘述<br>}）;</pre> 
 
 
 ### 3、Viewer调用示例
