@@ -8,6 +8,7 @@
 ## 调用的方式：$（selector）.picViewer（options） 返回Viewer对象。
 ### 1、options配置项说明
 options配置项 | 类型	| 是否必须 | 默认值 | 参数说明
+---|:--|:--|:--|:--
 data | Object| 是 | [] | 组件的数据源，如：
 ```
 [{
@@ -144,4 +145,4 @@ var viewer = $('.test').picViewer({
   },
 });
 ```
-oh ~ ,给颗星再走吧~
+> oh ~ ,给颗星再走吧~
