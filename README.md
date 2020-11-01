@@ -88,4 +88,4 @@ var viewer = $('.test').picViewer({
   },
 });
 ```
-***ow ho ~ ,markdown的 table 排版是个辛苦活呢，用个 star 表示你的认可吧~***
+*** waao ~ ,markdown的 table 排版是个辛苦活呢，用个 star 表示你的认可吧~***
