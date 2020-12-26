@@ -56,7 +56,7 @@ var viewer = $('.test').picViewer({
             isVideo:true,//标识video
             videoSrc:'./video/sy.mp4'
         },
-{  img: './images/posx.jpg', text: 'adsad' }, 
+        {  img: './images/posx.jpg', text: 'adsad' }, 
  ],
  afterView:function(d){
         console.log(d)
